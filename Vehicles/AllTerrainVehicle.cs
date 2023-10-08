@@ -21,13 +21,34 @@ namespace mpt_lab_5.Vehicles
         public string TerrainType
         {
             get => _terrainType;
-            set => _terrainType = value;
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    _terrainType = value;
+                }
+                else
+                {
+                    throw new InvalidOperationException("Error: Invalid TerrainType input. Please enter a " +
+                                                        "valid value.");
+                }
+            }
         }
 
         public int MaxPassengers
         {
             get => _maxPassengers;
-            set => _maxPassengers = value;
+            set
+            {
+                if (value >= 0)
+                {
+                    _maxPassengers = value;
+                }
+                else
+                {
+                    throw new ArgumentException("In a car, there should be at least a place for the driver :)");
+                }
+            }
         }
 
         public bool HasFourWheelDrive

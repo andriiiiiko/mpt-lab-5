@@ -21,7 +21,17 @@ namespace mpt_lab_5.Vehicles
         public int NumberOfDoors
         {
             get => _numberOfDoors;
-            set => _numberOfDoors = value;
+            set
+            {
+                if (value > 1)
+                {
+                    _numberOfDoors = value;
+                }
+                else
+                {
+                    throw new ArgumentException("The car must have at least two doors");
+                }
+            }
         }
 
         public bool HasSunroof
@@ -33,7 +43,18 @@ namespace mpt_lab_5.Vehicles
         public double FuelEfficiency
         {
             get => _fuelEfficiency;
-            set => _fuelEfficiency = value;
+            set
+            {
+                if (value > 0)
+                {
+                    _fuelEfficiency = value;
+                }
+                else
+                {
+                    throw new ArgumentException("The car cannot increase the amount of fuel in the gas tank " +
+                                                "while driving :)");
+                }
+            }
         }
         
         public override string ToString()

@@ -21,12 +21,32 @@ namespace mpt_lab_5.Vehicles
         public double CargoCapacity
         {
             get => _cargoCapacity;
-            set => _cargoCapacity = value;
+            set
+            {
+                if (value > 0)
+                {
+                    _cargoCapacity = value;
+                }
+                else
+                {
+                    throw new ArgumentException("The cargo capacity cannot be negative");
+                }
+            }
         }
         
         public int NumberOfAxles { 
-            get => _numberOfAxles; 
-            set => _numberOfAxles = value; 
+            get => _numberOfAxles;
+            set
+            {
+                if (value > 1)
+                {
+                    _numberOfAxles = value;
+                }
+                else
+                {
+                    throw new ArgumentException("The number of axles should be more than one");
+                }
+            } 
         }
 
         public bool TrailerHitch

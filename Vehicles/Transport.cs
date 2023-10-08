@@ -45,13 +45,33 @@ namespace mpt_lab_5.Vehicles
         public double EngineCapacity
         {
             get => _engineCapacity;
-            set => _engineCapacity = value;
+            set
+            {
+                if (value > 0)
+                {
+                    _engineCapacity = value;
+                }
+                else
+                {
+                    throw new ArgumentException("The capacity of the engine cannot be negative");
+                }
+            }
         }
     
         public int Price
         {
             get => _price;
-            set => _price = value;
+            set
+            {
+                if (value > 0)
+                {
+                    _price = value;
+                }
+                else
+                {
+                    throw new ArgumentException("The price cannot be negative");
+                }
+            }
         }
         
         public override string ToString()
