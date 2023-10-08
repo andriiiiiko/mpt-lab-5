@@ -1,0 +1,28 @@
+@startuml
+
+interface ITransport {
+    + Methods_of_Interface_ITransport()
+}
+
+class Transport {
+    + Fields_and_Methods_of_Class_Transport
+}
+
+class PassengerCar {
+    + Fields_and_Methods_of_Class_PassengerCar
+}
+
+class Truck {
+    + Fields_and_Methods_of_Class_Truck
+}
+
+class SUV {
+    + Fields_and_Methods_of_Class_SUV
+}
+
+ITransport <|.. Transport
+Transport --|> PassengerCar
+Transport --|> Truck
+Transport --|> SUV
+
+@enduml
