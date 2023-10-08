@@ -1,10 +1,11 @@
-namespace mpt_lab_5.Vehicles.Enums;
-    
-public enum FuelType
+namespace mpt_lab_5.Vehicles.Enums
 {
-    Gasoline,
-    Diesel,
-    Electric,
-    Hybrid,
-    NaturalGas
+    public enum FuelType
+    {
+        Petrol,
+        Diesel,
+        Electric,
+        Hybrid,
+        NaturalGas
+    }
 }

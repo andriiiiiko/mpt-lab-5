@@ -1,15 +1,16 @@
-namespace mpt_lab_5.Vehicles.Enums;
-
-public enum Color
+namespace mpt_lab_5.Vehicles.Enums
 {
-    Red,
-    Green,
-    Blue,
-    Yellow,
-    Orange,
-    Purple,
-    Pink,
-    Brown,
-    Gray,
-    White
+    public enum Color
+    {
+        Red,
+        Green,
+        Blue,
+        Yellow,
+        Orange,
+        Purple,
+        Pink,
+        Brown,
+        Gray,
+        White
+    }
 }
