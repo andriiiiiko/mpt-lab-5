@@ -10,7 +10,7 @@
 
 
     <ItemGroup>
-      <Folder Include="diagrams\png_files\" />
+      <Folder Include="Diagrams\Png_files\" />
     </ItemGroup>
 
 </Project>

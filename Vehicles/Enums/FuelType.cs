@@ -1,5 +1,5 @@
-namespace mpt_lab_5;
-
+namespace mpt_lab_5.Vehicles.Enums;
+    
 public enum FuelType
 {
     Gasoline,
