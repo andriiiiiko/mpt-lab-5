@@ -29,7 +29,7 @@ class Truck {
 }
 
 class AllTerrainVehicle {
-    + Fields_and_Methods_of_Class_SUV
+    + Fields_and_Methods_of_Class_AllTerrainVehicle
 }
 
 ITransport <|.. Transport
